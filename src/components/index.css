@@ -1,0 +1,30 @@
+img {
+  display: block;
+}
+
+.main {
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 0 20px rgba(0,0,0, .4);
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+}
+
+.mirror {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mirror img {
+  position: absolute;
+}
