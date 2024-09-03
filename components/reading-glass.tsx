@@ -3,8 +3,8 @@ import cls from "classnames";
 import "./index.css";
 
 interface IProps {
-  Img: any;
-  className?: any;
+  Img: string;
+  className?: string;
 }
 
 const ReadingGlass = ({ Img, className }: IProps) => {

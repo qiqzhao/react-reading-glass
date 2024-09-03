@@ -1,16 +1,17 @@
 {
   "name": "react-reading-glass",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react reading gloass",
   "main": "./dist/react-reading-glass-library.umd.js",
   "module": "./dist/react-reading-glass-library.es.js",
+  "types": "./dist/index.d.ts",
   "author": "qiqzhao",
   "files": [
     "dist"
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/qiqzhao/react-reading-glass"
   },
   "license": "MIT",
   "keywords": [
@@ -28,7 +29,7 @@
     "react": "^18.3.1"
   },
   "scripts": {
-    "build-lib": "npx vite build"
+    "build": "vite build && tsc -b"
   },
   "browserslist": {
     "production": [
@@ -41,5 +42,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.3.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0"
   }
 }
