@@ -1,6 +1,6 @@
 {
   "name": "react-reading-glass",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react reading gloass",
   "main": "./dist/react-reading-glass-library.umd.js",
   "module": "./dist/react-reading-glass-library.es.js",
