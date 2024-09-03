@@ -2,8 +2,12 @@
   "name": "react-reading-glass",
   "version": "0.0.1",
   "description": "react reading gloass",
-  "main": "build/index.js",
+  "main": "./dist/react-reading-glass-library.umd.js",
+  "module": "./dist/react-reading-glass-library.es.js",
   "author": "qiqzhao",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": ""
@@ -11,34 +15,20 @@
   "license": "MIT",
   "keywords": [
     "react",
+    "reading",
     "glass"
   ],
-  "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.104",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "classnames": "^2.5.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "vite": "^5.4.2"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "build-lib": "npx vite build"
   },
   "browserslist": {
     "production": [

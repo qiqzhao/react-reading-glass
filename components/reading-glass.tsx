@@ -1,11 +1,13 @@
 import React, { useRef } from "react";
+import cls from "classnames";
 import "./index.css";
 
 interface IProps {
   Img: any;
+  className?: any;
 }
 
-const ReadingGlass = ({ Img }: IProps) => {
+const ReadingGlass = ({ Img, className }: IProps) => {
   const mainRef = useRef<any>();
   const mirrorRef = useRef<any>();
   const imgRef = useRef<any>();
@@ -31,7 +33,11 @@ const ReadingGlass = ({ Img }: IProps) => {
     imgRef.current.style.top = -mirrorImgTop + "px";
   };
   return (
-    <div ref={mainRef} className="main" onMouseMove={handleMouseMove}>
+    <div
+      ref={mainRef}
+      className={cls("main", className)}
+      onMouseMove={handleMouseMove}
+    >
       <img src={Img} alt="img" className="img" />
       <div ref={mirrorRef} className="mirror">
         <img ref={imgRef} src={Img} alt="img" />
